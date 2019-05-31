@@ -16,26 +16,22 @@ let NERDTreeQuitOnOpen = 0
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
-:set number relativenumber
-:set nu rnu
-
-:set list
-set listchars=tab:>-
-
 filetype plugin indent on
-set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 
 set backupcopy=yes
 set directory=$HOME/.vim/swapfiles/
-
+set expandtab
 set hlsearch
-
+set list
+set listchars=tab:>-
 set nowrap
+set nu rnu
+set number relativenumber
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 autocmd Filetype php setlocal ts=4 sw=4 sts=0 expandtab
