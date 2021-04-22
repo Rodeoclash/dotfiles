@@ -1,8 +1,11 @@
 call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
+Plug 'elixir-editors/vim-elixir'
 Plug 'hashivim/vim-terraform'
+Plug 'jparise/vim-graphql'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'jwalton512/vim-blade'
+Plug 'leafgarland/typescript-vim'
 Plug 'mhinz/vim-signify'
 Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -65,3 +68,5 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 " Speeds up syntax highlighting
 set re=1
+
+set belloff=all
